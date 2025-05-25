@@ -212,15 +212,64 @@ span{
     }
 }
 
-
-/*Contacts*/
+/*Portfolio*/
 .title{
     margin-top: 100px;
     display: flex;
     justify-content: center;
     font-size: 4rem;
+    color: gold;
 }
 
+.portfolio-content{
+    background-color: gold;
+}
+
+ul{
+    list-style: none;
+    background: black;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3rem;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown li img{
+    max-width: 80vw;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    color: gold;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+/*Contacts*/
 .contacts-content{
     margin-top: 50px;
     display: flex;
