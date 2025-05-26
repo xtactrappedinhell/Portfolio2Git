@@ -59,7 +59,7 @@ nav a{
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover, nav a.active{
+nav a:hover{
     color: gold;
     border-bottom: 3px solid gold;
 }
@@ -79,17 +79,13 @@ nav a:hover, nav a.active{
         border-top: 0.1rem solid rgba(0, 0, 0, 1);
     }
 
-    nav.active{
-        display: block;
-    }
-
     nav a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
 
-    nav a:hover, nav a.active{
+    nav a:hover{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid gold;
@@ -138,12 +134,7 @@ span{
     transition: 0.2s linear;
 }
 
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
-.social-icons a{
+/*.social-icons a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +154,7 @@ span{
     transform: scale(1.3) translateY(5px);
     background-color: gold;
     box-shadow: 0 0 25px gold;
-}
+}*/
 
 .btn{
     display: inline-block;
@@ -221,13 +212,13 @@ span{
     color: gold;
 }
 
-.portfolio-content{
-    background-color: gold;
-}
-
 ul{
     list-style: none;
     background: black;
+}
+
+ul div{
+    background-color: gray;
 }
 
 ul li{
@@ -270,9 +261,33 @@ ul li:hover ul.dropdown{
 
 
 /*Contacts*/
-.contacts-content{
-    margin-top: 50px;
-    display: flex;
+.social-icons a{
+    display: grid;
     justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid gold;
     font-size: 2rem;
+    color: gold;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3 ease;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(5px);
+    background-color: gold;
+    box-shadow: 0 0 25px gold;
+}
+.social-icons h3{
+    font-size: 1.5rem;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    height: 60px;
 }
