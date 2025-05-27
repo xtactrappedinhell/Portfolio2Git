@@ -219,6 +219,7 @@ ul{
 
 ul div{
     background-color: gray;
+    
 }
 
 ul li{
@@ -255,7 +256,7 @@ ul li a:hover{
     color: gold;
 }
 
-ul li:hover ul.dropdown{
+ul li ul.dropdown.change{
     display: block;
 }
 
@@ -273,7 +274,6 @@ ul li:hover ul.dropdown{
     color: gold;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3 ease;
 }
 
 .social-icons a:hover{
@@ -283,11 +283,11 @@ ul li:hover ul.dropdown{
     box-shadow: 0 0 25px gold;
 }
 .social-icons h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .icon{
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 80px;
 }
