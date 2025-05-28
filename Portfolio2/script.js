@@ -1,20 +1,24 @@
-const dropdownBtn = document.querySelector(".dropdown-btn");
-const dropdownValue = document.querySelector(".dropdown");
+const dropdownbtns = document.querySelectorAll(".dropdown-btn");
 
-dropdownBtn.addEventListener("click",
-    function(){
-        if(dropdownValue.classList.contains("change")){
-            dropdownValue.classList.remove("change");
-        } else{
-            dropdownValue.classList.add("change");
-        }
-    }
-)
+dropdownbtns.forEach(button => {
+    button.addEventListener("click", function(e) {
 
-window.addEventListener("click",
-    function(e){
-        if(e.target !== dropdownBtn){
-            dropdownValue.classList.remove("change");
-        }
+        const dropdown = this.nextElementSibling;
+
+        dropdown.classList.toggle("change");
+
+        document.querySelectorAll(".dropdown").forEach(nextdropdown => {
+            if (nextdropdown !== dropdown) {
+                nextdropdown.classList.remove("change");
+            }
+        });
+    });
+});
+
+window.addEventListener("click", function(e) {
+    if (!e.target.matches(".dropdown-btn")) {
+        document.querySelectorAll(".dropdown").forEach(dropdown => {
+            dropdown.classList.remove("change");
+        });
     }
-)
+});
