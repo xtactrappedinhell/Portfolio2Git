@@ -67,10 +67,9 @@ nav a:hover{
 @media(max-width:995px){
     nav{
         position: absolute;
-        display: none;
         top: 0;
         right: 0;
-        width: 40%;
+        width: 30%;
         border-left: 3px solid gold;
         border-bottom: 3px solid gold;
         border-bottom-left-radius: 2rem;
